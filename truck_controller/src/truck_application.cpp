@@ -52,7 +52,7 @@ TruckApplication::~TruckApplication()
 
 void TruckApplication::initialize() 
 {
-    control_message_nh_.reset(new ros::NodeHandle("~control"));
+    control_message_nh_.reset(new ros::NodeHandle("/control"));
     updater_.reset(new diagnostic_updater::Updater());
     updater_->setHardwareID("Truck DBW");
 
