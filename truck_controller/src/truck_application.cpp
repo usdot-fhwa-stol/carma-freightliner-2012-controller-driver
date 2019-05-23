@@ -117,7 +117,7 @@ void TruckApplication::initialize()
 
     // Create a new driver status and setup to default values
     cav_msgs::DriverStatus status;
-    status.lon_controller = static_cast<unsigned char>(true);
+    status.controller = static_cast<unsigned char>(true);
     status.status = cav_msgs::DriverStatus::OPERATIONAL;
     setStatus(status);
 
