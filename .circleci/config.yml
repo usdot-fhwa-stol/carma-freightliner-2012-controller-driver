@@ -49,7 +49,7 @@ jobs:
           name: Pull Deps
           command: |
             source ${INIT_ENV}
-            ./CARMAFreightliner2012ControllerDriver/docker/checkout.sh ${PWD}
+            ./src/CARMAFreightliner2012ControllerDriver/docker/checkout.sh ${PWD}
       - run:
           name: Build Driver
           command: |
