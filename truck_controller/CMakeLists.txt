@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8.3)
 project(truck_dbw_controller)
 
 set(CMAKE_CXX_STANDARD 11)
+set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
